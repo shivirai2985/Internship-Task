@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+@media(max-width:768px) {
+    .logo img {
+        height: 55px;
+    }
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+/* Optional: better alignment */
+
+.navbar {
+    align-items: center;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #2e7d32;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Home */
+
+.home {
+    height: 100vh;
+    background: url('https://picsum.photos/1600/900') no-repeat center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.home button {
+    padding: 10px 30px;
+    margin-top: 20px;
+    background: #66bb6a;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Sections */
+
+section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.services .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px;
+    background: #66bb6a;
+    color: white;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+/* Gallery */
+
+.gallery img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+/* Contact */
+
+.contact input,
+.contact textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+/* Basic Button Style */
+
+.contact button {
+    padding: 12px 25px;
+    background: #66bb6a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Hover Effect */
+
+.contact button:hover {
+    background: #a5d6a7;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Optional: Full width for mobile */
+
+@media(max-width:768px) {
+    .contact button {
+        width: 80%;
+        padding: 12px 0;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    background: #2e7d32;
+    color: white;
+    padding: 50px 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+
+/* Contact Info */
+
+footer .contact-info p {
+    margin: 5px 0;
+}
