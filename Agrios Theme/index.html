@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Clone Development (Agrios Theme)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.poRyG1sl59f2cX5ndELLhQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Agri Culture Logo">
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="home">
+        <h1>Eco Farming for Better Future</h1>
+        <p id="quote">Healthy Food | Healthy Life</p>
+        <button onclick="scrollToSection('about')">Explore</button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>“At Agri Culture, we believe farming is not just a profession, it’s a responsibility toward nature and future generations. Our mission is to deliver sustainable, innovative, and high-quality agricultural solutions that nurture both land and life.
+            We promote sustainable agriculture and eco farming techniques that protect nature and improve crop qualityWe promote sustainable agriculture and eco farming techniques that protect nature and improve crop quality”</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">Organic Farming</div>
+            <div class="card">Irrigation Systems</div>
+            <div class="card">Soil Testing</div>
+            <div class="card">Crop Planning</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/300/200?1">
+            <img src="https://picsum.photos/300/200?2">
+            <img src="https://picsum.photos/300/200?3">
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <p>"Working with Agri Culture has made farming more efficient, profitable, and environmentally responsible.”</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message"></textarea>
+        <button onclick="submitForm()">Send</button>
+    </section>
+
+    <!-- Footer -->
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>📍 Sagar, Madhya Pradesh, India</p>
+                <p>📞 +91 XXXXX XXXXX</p>
+                <p>✉ info@agriculture.com</p>
+            </div>
+
+
+
+
+            <p>© 2026 Agri Culture. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+
+</html>
